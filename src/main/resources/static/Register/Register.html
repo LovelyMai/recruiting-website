@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册</title>
+  <link rel="stylesheet" href="Register.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>已有账户?</h2>
+      <p>点击去登录</p>
+      <a href="../Login/Login.html">登录</a>
+    </div>
+
+    <div class="right">
+      <h2>注册</h2>
+      <form id="Register-form">
+        <input type="text" placeholder="账户" required id="account" name="account" class="account">
+        <input type="password" placeholder="密码" required id="password" name="password" class="password">
+        <div class="role-group">
+          <input type="radio" name="role" id="JOBSEEKER" required><label for="JOBSEEKER">牛人</label>
+          <input type="radio" name="role" id="EMPLOYER"><label for="EMPLOYER">老板</label>
+        </div>
+
+        <button type="submit">注册</button>
+      </form>
+    </div>
+  </div>
+  <script src="Register.js"></script>
+</body>
+
+</html>

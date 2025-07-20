@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 侧边导航栏 */
+.sidebar {
+  width: 240px;
+  background: #2c3e50;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  background: #3498db;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.nav-item,
+.settings {
+  color: #bdc3c7;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding-left: 44px;
+}
+
+.nav-item:hover,
+.settings:hover {
+  transform: translateY(-2.5px);
+}
+
+.nav-item.active {
+  background: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.settings {
+  font-size: 20px;
+  margin-top: auto;
+  padding-left: 50px;
+}
+
+/* 主内容区 */
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  background: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 50px;
+}
+
+.title {
+  font-size: 26px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* 个人信息 */
+.me-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+  position: relative;
+  /* 添加相对定位 */
+}
+
+
+.me-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* 改为垂直排列 */
+  gap: 8px;
+  /* 设置子元素之间的间距 */
+  max-width: 400px;
+  /* 限制最大宽度 */
+}
+
+.me-name {
+  font-size: 18px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.me-identity {
+  color: #3498db;
+}
+
+.me-gender,
+.me-identity {
+  margin: 0;
+  font-size: 16px;
+}
+
+.me-name,
+.me-gender,
+.me-identity {
+  padding: 6px 10px;
+  border: 2px solid #ecf0f1;
+  border-radius: 15px;
+  transition: border-color 0.3s;
+}
+
+.me-name:focus,
+.me-gender:focus,
+.me-identity:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.me-btns {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.me-btns button {
+  padding: 8px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #3498db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.me-btns button:hover {
+  background: #217dbb;
+}
+
+.me-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.me-row label {
+  width: 100px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.me-input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-left: 8px;
+  transition: border-color 0.3s;
+}
+
+.me-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.me-value {
+  margin-left: 8px;
+  color: #34495e;
+  font-size: 15px;
+}
+
+.me-account-large {
+  position: static;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 32px;
+  margin-left: 0;
+  z-index: 2;
+  background: white;
+  padding: 0 20px 10px 0;
+}
+
+.me-realname-large {
+  position: static;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 32px;
+  margin-left: 0;
+  z-index: 2;
+  background: white;
+  padding: 0 20px 10px 0;
+}

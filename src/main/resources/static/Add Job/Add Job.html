@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Job</title>
+  <link rel="stylesheet" href="Add%20Job.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">职通招聘</div>
+      <a href="../All%20Job/All%20Job%201.html">
+        <div class="nav-item">📚 全部岗位</div>
+      </a>
+      <a href="../My%20Job/My%20Job%201.html">
+        <div class="nav-item active">📖 我的岗位</div>
+      </a>
+      <a href="../Me/Me.html">
+        <div class="nav-item">🫥 个人中心</div>
+      </a>
+      <a href="../Settings/Settings%201.html" class="settings">
+        <div>⚙️ 设置</div>
+      </a>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <div class="title">新增岗位</div>
+      </div>
+      <form id="add-job-form" class="add-job-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="title">岗位名称*</label>
+            <input type="text" id="title" name="title" placeholder="请输入岗位名称*" required>
+          </div>
+          <div class="form-group">
+            <label for="address">岗位地址*</label>
+            <input type="text" id="address" name="address" placeholder="请输入工作地点*" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group" style="flex:1 1 100%">
+            <label for="description">岗位描述*</label>
+            <textarea id="description" name="description" placeholder="请输入岗位描述*" required></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>求职类型</label>
+            <div class="btn-group" id="jobType-group">
+              <label><input type="radio" name="jobType" value="全职" required> 全职</label>
+              <label><input type="radio" name="jobType" value="兼职"> 兼职</label>
+              <label><input type="radio" name="jobType" value="实习"> 实习</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>学历要求</label>
+            <div class="btn-group" id="eduReq-group">
+              <label><input type="radio" name="eduReq" value="初中及以下" required> 初中及以下</label>
+              <label><input type="radio" name="eduReq" value="中专"> 中专</label>
+              <label><input type="radio" name="eduReq" value="高中"> 高中</label>
+              <label><input type="radio" name="eduReq" value="大专"> 大专</label>
+              <label><input type="radio" name="eduReq" value="本科"> 本科</label>
+              <label><input type="radio" name="eduReq" value="硕士"> 硕士</label>
+              <label><input type="radio" name="eduReq" value="博士"> 博士</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>薪资待遇</label>
+            <div class="btn-group" id="salary-group">
+              <label><input type="radio" name="salary" value="3k以下" required> 3k以下</label>
+              <label><input type="radio" name="salary" value="3k-5k"> 3k-5k</label>
+              <label><input type="radio" name="salary" value="5-10k"> 5-10k</label>
+              <label><input type="radio" name="salary" value="10-20k"> 10-20k</label>
+              <label><input type="radio" name="salary" value="20-50k"> 20-50k</label>
+              <label><input type="radio" name="salary" value="50k以上"> 50k以上</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>经验要求</label>
+            <div class="btn-group" id="workExp-group">
+              <label><input type="radio" name="workExp" value="在校生" required> 在校生</label>
+              <label><input type="radio" name="workExp" value="应届生"> 应届生</label>
+              <label><input type="radio" name="workExp" value="1年以内"> 1年以内</label>
+              <label><input type="radio" name="workExp" value="1-3年"> 1-3年</label>
+              <label><input type="radio" name="workExp" value="3-5年"> 3-5年</label>
+              <label><input type="radio" name="workExp" value="5-10年"> 5-10年</label>
+              <label><input type="radio" name="workExp" value="10年以上"> 10年以上</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>公司规模</label>
+            <div class="btn-group" id="companyScale-group">
+              <label><input type="radio" name="companyScale" value="0-20人" required> 0-20人</label>
+              <label><input type="radio" name="companyScale" value="20-99人"> 20-99人</label>
+              <label><input type="radio" name="companyScale" value="100-499人"> 100-499人</label>
+              <label><input type="radio" name="companyScale" value="500-999人"> 500-999人</label>
+              <label><input type="radio" name="companyScale" value="1000-9999人"> 1000-9999人</label>
+              <label><input type="radio" name="companyScale" value="10000人以上"> 10000人以上</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>行业分类</label>
+            <div class="btn-group" id="companyIndustry-group">
+              <label><input type="radio" name="companyIndustry" value="互联网/AI" required> 互联网/AI</label>
+              <label><input type="radio" name="companyIndustry" value="电子/通信/半导体"> 电子/通信/半导体</label>
+              <label><input type="radio" name="companyIndustry" value="服务业"> 服务业</label>
+              <label><input type="radio" name="companyIndustry" value="消费品/批发/零售"> 消费品/批发/零售</label>
+              <label><input type="radio" name="companyIndustry" value="房地产/建筑"> 房地产/建筑</label>
+              <label><input type="radio" name="companyIndustry" value="教育培训"> 教育培训</label>
+              <label><input type="radio" name="companyIndustry" value="广告/传媒/文化/体育"> 广告/传媒/文化/体育</label>
+              <label><input type="radio" name="companyIndustry" value="制造业"> 制造业</label>
+              <label><input type="radio" name="companyIndustry" value="制药/医疗"> 制药/医疗</label>
+              <label><input type="radio" name="companyIndustry" value="汽车"> 汽车</label>
+              <label><input type="radio" name="companyIndustry" value="交通运输/物流"> 交通运输/物流</label>
+              <label><input type="radio" name="companyIndustry" value="能源/化工/环保"> 能源/化工/环保</label>
+              <label><input type="radio" name="companyIndustry" value="金融"> 金融</label>
+              <label><input type="radio" name="companyIndustry" value="政府/非盈利机构/其他"> 政府/非盈利机构/其他</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="add-btn">✔ 发布岗位</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="Add%20Job.js"></script>
+</body>
+
+</html>
